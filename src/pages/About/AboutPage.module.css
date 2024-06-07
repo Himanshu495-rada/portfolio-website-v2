@@ -3,7 +3,7 @@
 }
 
 .aboutContainer {
-  width: calc(100vw - 50px);
+  width: 100vw;
   height: auto;
   min-height: 100vh;
   display: flex;
@@ -45,7 +45,7 @@
     flex-direction: column; /* Vertical layout for mobile */
   }
 
-  .homeContainer {
+  .aboutContainer {
     flex-direction: column; /* Vertical section layout for mobile */
     margin-left: 0;
   }

@@ -1,6 +1,6 @@
 import React from "react";
 
-const ExperiencePage = () => {
+const ExperiencePage: React.FC = () => {
   return <div>ExperiencePage</div>;
 };
 

@@ -15,6 +15,7 @@ import webviewAndroid from "../../assets/webview-android.png";
 const ProjectsPage: React.FC = () => {
   const projects = [
     authenticationBackend,
+    chatroom,
     espCam,
     pythonBanner,
     qrscannerAndroid,

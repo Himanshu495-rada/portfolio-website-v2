@@ -9,7 +9,7 @@ import {
 import { useNavigate, NavLink } from "react-router-dom";
 import styles from "./NavBar.module.css";
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   const nav = useNavigate();
 
   return (

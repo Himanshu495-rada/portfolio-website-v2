@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.contactContainer {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.contactContainer h1 {
+  font-size: 75px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column; /* Arrange form elements vertically */
+  max-width: 500px; /* Optional: Limit the form width */
+  margin: 0 auto; /* Optional: Center the form */
+  padding: 20px;
+}
+
+.contact_form div {
+  margin-bottom: 10px; /* Add spacing between form fields */
+}
+
+.contact_form label {
+  display: block; /* Make labels take up full width */
+  margin-bottom: 5px;
+  text-align: start;
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact_form button {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #000; /* Blue background for the button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 #696969;
+  transition: box-shadow 0.4s;
+}
+.contact_form button:hover {
+  box-shadow: 10px 10px 0 #696969;
+}
+
+@media (max-width: 950px) {
+  .container {
+    flex-direction: column; /* Vertical layout for mobile */
+  }
+
+  .contactContainer {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}

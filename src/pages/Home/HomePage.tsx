@@ -1,13 +1,12 @@
 import React from "react";
-import NavBar from "../../Components/NavBar/NavBar";
 import profilePhoto from "../../assets/photo.jpg";
+import resumePDF from "../../assets/Himanshu-Yashwant-Tekade-Resume.pdf";
 import styles from "./HomePage.module.css";
 import { NavLink } from "react-router-dom";
 
 const HomePage: React.FC = () => {
   return (
     <div className={styles.container}>
-      <NavBar />
       <div className={styles.homeContainer}>
         <div className={styles.profile_photo}>
           <img src={profilePhoto} alt="profile photo" />
@@ -17,9 +16,14 @@ const HomePage: React.FC = () => {
           <h1 className="name">Himanshu Tekade</h1>
           <h2 className="role">Full Stack Developer</h2>
           <div className={styles.btnContainer}>
-            <NavLink to={"/"} title="Resume" className={styles.btn}>
+            <a
+              href={resumePDF}
+              target="_blank"
+              title="Resume"
+              className={styles.btn}
+            >
               Resume
-            </NavLink>
+            </a>
             <NavLink to={"/contact"} title="Contact" className={styles.btn}>
               Contact
             </NavLink>

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./ProjectsPage.module.css";
-import NavBar from "../../Components/NavBar/NavBar";
 import Card from "./Card";
 import authenticationBackend from "../../assets/authentication-backend.png";
 import chatroom from "../../assets/Chatroom.png";
@@ -14,25 +13,53 @@ import webviewAndroid from "../../assets/webview-android.png";
 
 const ProjectsPage: React.FC = () => {
   const projects = [
-    authenticationBackend,
-    chatroom,
-    espCam,
-    pythonBanner,
-    qrscannerAndroid,
-    telegramBot,
-    timelapseCamera,
-    torretPython,
-    webviewAndroid,
+    {
+      image: authenticationBackend,
+      url: "/secure-user-authentication-with-express-nodejs-and-prisma",
+    },
+    {
+      image: chatroom,
+      url: "/how-to-make-chatroom-app-in-python",
+    },
+    {
+      image: timelapseCamera,
+      url: "/esp32-timelapse-camera",
+    },
+    {
+      image: espCam,
+      url: "/esp32-camera-module",
+    },
+
+    {
+      image: qrscannerAndroid,
+      url: "/how-to-make-qr-code-scanner-app-from-scratch",
+    },
+    {
+      image: webviewAndroid,
+      url: "/webview-in-android-studio",
+    },
+    {
+      image: torretPython,
+      url: "/how-to-download-torrent-using-python",
+    },
+    {
+      image: telegramBot,
+      url: "/how-to-create-telegram-bot-in-python",
+    },
+
+    {
+      image: pythonBanner,
+      url: "/secure-user-authentication-with-express-nodejs-and-prisma",
+    },
   ];
 
   return (
     <div className={styles.container}>
-      <NavBar />
       <div className={styles.projectsContainer}>
         <h1>Projects</h1>
         <div className={styles.card_grid}>
           {projects.map((project) => (
-            <Card imageSrc={project} />
+            <Card imageSrc={project.image} url={project.url} />
           ))}
         </div>
       </div>

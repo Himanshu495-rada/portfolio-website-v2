@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./ContactPage.module.css";
 import NavBar from "../../Components/NavBar/NavBar";
+import emailjs from "@emailjs/browser";
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     message: "",
   });
+  const form = useRef<HTMLFormElement>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -21,8 +22,22 @@ const ContactPage: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Here you'd typically send the form data to your backend
-    console.log(formData); // For now, just log to the console
+
+    emailjs
+      .sendForm("service_qjn684b", "template_zvpnc38", form.current!, {
+        publicKey: "iVPr8KIM1m4ClcFkH",
+      })
+      .then((result) => {
+        console.log("Email sent successfully:", result.text);
+        setFormData({ name: "", email: "", message: "" });
+        alert("Email sent successfully");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error.text);
+        alert("Error sending email");
+      });
+
+    console.log(formData);
   };
 
   return (
@@ -31,25 +46,14 @@ const ContactPage: React.FC = () => {
       <div className={styles.contactContainer}>
         <h1>Contact</h1>
         <div className={styles.contact_form}>
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="firstName">First Name:</label>
+              <label htmlFor="name">Full Name:</label>
               <input
                 type="text"
-                id="firstName"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="lastName">Last Name:</label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
+                id="name"
+                name="name"
+                value={formData.name}
                 onChange={handleChange}
                 required
               />

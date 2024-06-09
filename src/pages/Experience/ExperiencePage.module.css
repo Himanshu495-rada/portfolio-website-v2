@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.experienceContainer {
+  width: 100vw;
+  height: 100vh;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.experienceContainer h1 {
+  font-size: 75px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.columnContainer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: start;
+}
+
+.column1 {
+  width: calc(100% - 50px);
+  height: 100%;
+  padding: 0 20px;
+}
+
+h4 {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  text-align: start;
+}
+
+hr {
+  border: 1px solid #000;
+}
+
+.column2 {
+  width: calc(100% - 50px);
+  height: 100%;
+  padding: 0 20px;
+}
+
+.row1 {
+  display: flex;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+  margin-left: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c3c3c3; /* Default gray color */
+  margin-right: 5px;
+}
+
+.dotFilled {
+  background-color: black; /* Filled dot color */
+}
+
+@media (max-width: 950px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .experienceContainer {
+    margin-left: 0;
+  }
+
+  .experienceContainer h1 {
+    font-size: 60px;
+    line-height: 100px;
+  }
+
+  .columnContainer {
+    flex-direction: column;
+  }
+
+  .column2 {
+    margin-bottom: 50px;
+  }
+}

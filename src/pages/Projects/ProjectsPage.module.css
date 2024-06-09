@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
 .container {
   display: flex;
   min-height: 100vh;
@@ -55,3 +57,53 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
+
+/* Project Page CSS */
+
+.projectPageContainer {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectPageContainer h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+iframe {
+  margin: 50px 0;
+}
+
+.data {
+  text-align: start;
+  padding: 0 20px;
+  width: 80%;
+}
+
+.downloadBtn {
+  background-color: #0c6efc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 950px) {
+  .projectPageContainer {
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 70px;
+  }
+}
+
+/* Project Page CSS */

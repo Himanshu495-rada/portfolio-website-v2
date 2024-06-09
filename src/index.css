@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 
-* {
+h1,
+h2,
+h3,
+h4,
+p,
+button,
+label,
+a {
   font-family: "Cairo", sans-serif;
 }
 

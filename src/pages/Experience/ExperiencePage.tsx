@@ -11,7 +11,7 @@ const ExperiencePage: React.FC = () => {
     {
       title: "Full Stack Development",
       skill:
-        "Spring boot, Java, Microservices, Hibernate, Spring Data JPA, Angular, Selenium, Junit, TestNG",
+        "Spring boot, Java, Microservices, Hibernate, Spring Data JPA, Selenium, Junit, TestNG",
       ratings: 5,
     },
     {
@@ -95,10 +95,12 @@ const ExperiencePage: React.FC = () => {
             <p>Full Stack Developer</p>
             <h4>Stack</h4>
             <hr />
-            <p>SpringBoot Java, Angular Typescript, JUnit, TestNG, Selenium</p>
+            <p>
+              SpringBoot Java, React JS, Typescript, JUnit, TestNG, Selenium
+            </p>
             <h4>Project</h4>
             <hr />
-            <p>Payment Terminal Management System</p>
+            <p>Sustainable Future</p>
             <h4>Role</h4>
             <hr />
             <ul>
@@ -108,9 +110,11 @@ const ExperiencePage: React.FC = () => {
                 incrementally.
               </li>
               <li>
-                Built scalable, data intensive microservice applications using
-                Java, Spring boot that supports more than 2,00,000 Nordic
-                merchants to view their payment terminal data onto UI.
+                Built scalable, data intensive microservice application using
+                Java, Spring boot that collects data from different
+                microservices and perform calculations to check the
+                sustainability of product, where user can see the result on
+                dashboard or export to excel sheet.
               </li>
               <li>
                 Translate client requirements into technical solutions,
@@ -125,7 +129,7 @@ const ExperiencePage: React.FC = () => {
                 and reusability
               </li>
               <li>
-                Handle client-side data interactions with frontend in Angular
+                Handle client-side data interactions with frontend in React
               </li>
               <li>
                 Unit and integration testing using JUnit, TestNG, Selenium

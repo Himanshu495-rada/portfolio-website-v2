@@ -8,17 +8,18 @@ const AboutPage: React.FC = () => {
         <div className={styles.contentContainer}>
           <h1>About</h1>
           <p>
-            Experienced Full Stack developer with Proficient in developing
-            microservices-based applications within Agile project environments.
-            Possessing nearly 2 years of hand-on experience, I have a proven
-            track record of delivering high-quality software solutions that meet
-            client requirements and deadlines. With strong problem-solving
-            skills and collaborative mindset, I aspire to expand my knowledge
-            base further, embracing new challenges that will push me to grow
-            personally and professionally. <br />
-            As a hobby I build stuff like electronics projects, software
-            projects and youtube videos to educate people for free and implrove
-            my skill-set
+            I am an experienced Full Stack Developer with over 2 years of
+            hands-on expertise in developing microservices-based applications
+            within Agile environments. My journey has been marked by a
+            consistent track record of delivering robust, scalable software
+            solutions that align with client expectations and project deadlines.{" "}
+            <br />
+            Driven by a passion for problem-solving and collaboration, I thrive
+            in dynamic team settings and constantly seek opportunities to expand
+            my technical knowledge. Beyond my professional work, I engage in
+            personal projects, building innovative electronics and software
+            solutions. I also create educational content on YouTube, sharing
+            insights and helping others while honing my skills.
           </p>
         </div>
       </div>
